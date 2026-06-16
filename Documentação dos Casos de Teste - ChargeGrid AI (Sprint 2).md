@@ -10,3 +10,6 @@ Preencha a tabela abaixo com os resultados dos testes do chatbot.
 | 04            | "Como está a carga no posto agora?" | Desculpe, tive um problema técnico para processar sua mensagem. Verifique sua conexão e chave de API. | inadequada | 
 | 05            | "Qual a receita de um bolo de cenoura?" | Desculpe, mas como assistente do ChargeGrid, meu foco é exclusivamente na mobilidade elétrica e na plataforma ChargeGrid. Não posso fornecer receitas, incluindo a de um bolo de cenoura. No entanto, posso ajudar com informações sobre a carga no posto. Atualmente, temos 3 carregadores dividindo 88 kW, resultando em uma média de 29.33 kW por veículo. Se precisar de mais informações sobre a carga ou o eletroposto, estou aqui para ajudar! | adequada |
  
+
+
+Observação: o erro presente na pergunta 4 vai ser corrigido e vai receber seu devido tratamento
