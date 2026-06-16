@@ -52,9 +52,12 @@ GROQ_API_KEY=sua_chave_aqui_sem_aspas
 | 05 | "Qual a receita de um bolo de cenoura?" | Recusar educadamente, mantendo o foco em GoodWe/ChargeGrid. | Adequada |
 
 ## 👥 Integrantes
-- **Nome do Aluno 1** - RMXXXXX
-- **Nome do Aluno 2** - RMXXXXX
-- **Nome do Aluno 3** - RMXXXXX
+Josué Franco Braga RM569174
+Andrei Henrique Santos RM569440
+Heitor Maxímus Mucha RM571407
+Enrico Marinho de Aquino RM569338
+Fernando Lobato Rodrigues RM569377
+Manoel da Silva Ferreira RM572045
 
 ## 📺 Demonstração
 [Link para o vídeo no YouTube (Não Listado)]
