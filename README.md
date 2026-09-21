@@ -13,8 +13,8 @@ de LLM.
   (`index.html`) da Sprint 2
 - **Framework de agentes:** LangChain (`create_agent`) + LangGraph
   (`InMemorySaver` como checkpointer)
-- **IA:** Groq API — comparação entre `llama-3.3-70b-versatile` e
-  `openai/gpt-oss-120b` (ver `relatorio_modelos.md`)
+- **IA:** Groq API — comparação entre `openai/gpt-oss-120b` e
+  `qwen/qwen3.8-27b` (ver `relatorio_modelos.md`)
 - **Gestão de dependências:** `pip` e `python-dotenv`
 
 ## 🧠 Por que LangChain/LangGraph
@@ -76,9 +76,12 @@ Gera `resultados_eval.md` com todas as respostas, tokens e latências.
 
 ## 👥 Integrantes
 
-- **Nome do Aluno 1** - RMXXXXX - Turma XXXXX
-- **Nome do Aluno 2** - RMXXXXX - Turma XXXXX
-- **Nome do Aluno 3** - RMXXXXX - Turma XXXXX
+- **Josué Franco Braga** - RM569174 - Turma 1CCPZ
+- **Andrei Henrique Santos** - RM569440 - Turma 1CCPZ
+- **Heitor Maxímus Mucha** - RM571407 - Turma 1CCPZ
+- **Enrico Marinho de Aquino** - RM569338 - Turma 1CCPZ
+- **Fernando Lobato Rodrigues** - RM569377 - Turma 1CCPZ
+- **Manoel da Silva Ferreira** - RM572045 - Turma 1CCPZ
 
 ## 📄 Entrega
 

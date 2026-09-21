@@ -6,11 +6,19 @@ Ambos servidos via Groq API (mesma chave, sem custo/setup adicional),
 usando o mesmo agente (LangChain/LangGraph) e o mesmo eval set — a única
 variável isolada é o modelo:
 
-- **Modelo A:** `llama-3.3-70b-versatile` — mesmo modelo usado na Sprint 2,
-  mantido como referência para isolar o efeito da migração de framework.
-- **Modelo B:** `openai/gpt-oss-120b` — modelo aberto da OpenAI hospedado
-  na Groq, de família/arquitetura diferente do A (bom contraste para a
-  comparação).
+- **Modelo A:** `openai/gpt-oss-120b` — modelo aberto da OpenAI hospedado
+  na Groq. Usado também como baseline do legado (ver nota abaixo), o que
+  isola o efeito da migração de framework no Bloco D.
+- **Modelo B:** `qwen/qwen3.8-27b` — modelo de família/arquitetura
+  diferente do A, listado como disponível na conta Groq usada pelo grupo
+  (bom contraste de tamanho e proveniência para a comparação).
+
+> **Nota sobre a escolha:** o modelo original da Sprint 2
+> (`llama-3.3-70b-versatile`) saiu de linha na Groq entre a Sprint 2 e a
+> Sprint 03 (`groq.NotFoundError: model_not_found` ao rodar o eval) — por
+> isso o legado também foi reexecutado com o Modelo A, em vez do modelo
+> original. Ver "Problemas encontrados e soluções" no relatório de
+> evolução.
 
 ## Parametrização (idêntica para os dois modelos, para comparação justa)
 

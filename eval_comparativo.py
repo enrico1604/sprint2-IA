@@ -28,8 +28,10 @@ import copy
 from app import build_agent, TOOLS  # noqa: F401 (import garante que app.py carrega sem erro)
 import app_legado
 
-MODEL_A = "llama-3.3-70b-versatile"   # mesmo modelo da Sprint 2 (baseline)
-MODEL_B = "openai/gpt-oss-120b"        # segundo modelo para o comparativo do Bloco B
+MODEL_A = "openai/gpt-oss-120b"   # modelo A (usado tambem como baseline do legado,
+                                   # ja que o modelo original da Sprint 2,
+                                   # llama-3.3-70b-versatile, saiu de linha na Groq)
+MODEL_B = "qwen/qwen3.8-27b"      # segundo modelo para o comparativo do Bloco B
 
 CASOS_ACURACIA = [
     ("ACC-1", "Quem e voce e o que faz?"),

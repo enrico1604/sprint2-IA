@@ -1,0 +1,12 @@
+FIAP - Prompt and Artificial Intelligence - Challenge Integrador Sprint 03
+EV Challenge - GoodWe | ChargeGrid Intelligence
+
+Integrantes:
+Josué Franco Braga - RM569174 - Turma 1CCPZ
+Andrei Henrique Santos - RM569440 - Turma 1CCPZ
+Heitor Maxímus Mucha - RM571407 - Turma 1CCPZ
+Enrico Marinho de Aquino - RM569338 - Turma 1CCPZ
+Fernando Lobato Rodrigues - RM569377 - Turma 1CCPZ
+Manoel da Silva Ferreira - RM572045 - Turma 1CCPZ
+
+Repositório: https://github.com/enrico1604/sprint2-IA

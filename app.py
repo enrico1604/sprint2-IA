@@ -19,7 +19,7 @@ if not GROQ_API_KEY:
 
 # Modelo default do agente em producao. Escolhido com base no comparativo
 # documentado em relatorio_modelos.md (Sprint 03 - Bloco B).
-MODEL_NAME = os.environ.get("CHARGEGRID_MODEL", "llama-3.3-70b-versatile")
+MODEL_NAME = os.environ.get("CHARGEGRID_MODEL", "openai/gpt-oss-120b")
 
 app = Flask(__name__)
 CORS(app)
