@@ -219,13 +219,20 @@ def build_agent(model_name: str = MODEL_NAME):
     # Parametrizacao documentada em relatorio_modelos.md (Bloco B):
     # temperature baixa para manter consistencia nos calculos e nas
     # respostas de guardrail (menos variancia entre execucoes); max_tokens
-    # limitado por ser um assistente de respostas curtas/diretas.
+    # limitado por ser um assistente de respostas curtas/diretas. Valor
+    # ajustado para 900 (era 1024) porque o modelo qwen/qwen3.8-27b tem, na
+    # conta usada pelo grupo, um limite de saida de 1000 tokens/minuto
+    # (OTPM) - pedir max_tokens=1024 estourava esse teto em toda chamada,
+    # com erro 429 "Request too large" (nao e rate limit por excesso de
+    # uso, e sim o proprio limite da requisicao sendo maior que o teto).
+    # 900 fica com folga sob o teto e continua igual para os dois modelos,
+    # preservando a comparacao justa.
     llm = ChatGroq(
         model=model_name,
         api_key=GROQ_API_KEY,
         temperature=0.3,
         top_p=0.9,
-        max_tokens=1024,
+        max_tokens=900,
     )
     checkpointer = InMemorySaver()
     return create_agent(

@@ -185,7 +185,7 @@ def responder_legado(mensagem_usuario: str, historico: list, model_name: str) ->
         tool_choice="auto",
         temperature=0.3,
         top_p=0.9,
-        max_tokens=1024,
+        max_tokens=900,
     )
     if response.usage:
         tokens_prompt += response.usage.prompt_tokens
@@ -211,7 +211,7 @@ def responder_legado(mensagem_usuario: str, historico: list, model_name: str) ->
             messages=historico,
             temperature=0.3,
             top_p=0.9,
-            max_tokens=1024,
+            max_tokens=900,
         )
         if response_final.usage:
             tokens_prompt += response_final.usage.prompt_tokens
