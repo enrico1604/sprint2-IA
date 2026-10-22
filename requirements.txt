@@ -6,3 +6,5 @@ langchain
 langchain-core
 langchain-groq
 langgraph
+deepeval
+reportlab

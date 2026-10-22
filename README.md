@@ -68,6 +68,31 @@ python eval_comparativo.py
 ```
 Gera `resultados_eval.md` com todas as respostas, tokens e latências.
 
+## 📊 Sprint 04 — Avaliação sistemática (pipeline com LLM as a judge)
+
+A checagem manual da Sprint 03 foi substituída por um pipeline automatizado:
+
+- `eval/golden_dataset.json` — 32 casos com gabarito e critérios de aceite
+  (11 funcionalidade, 5 escopo, 10 segurança, 6 borda), reaproveitando os
+  casos das Sprints 1 a 3.
+- `eval/pipeline.py` — roda o dataset contra 3 versões (`legado` da Sprint 2,
+  `agente-A` e `agente-B` da Sprint 03) e avalia cada resposta com DeepEval
+  GEval (`eval/metricas.py`) usando um juiz na Groq (`eval/juiz.py`).
+- `eval/resultados/` — respostas, notas por caso, `tabela_resultados.md` e
+  `confronto_manual.md` (pipeline x avaliação manual da Sprint 03).
+- `relatorio/gerar_relatorio.py` — gera `relatorio/relatorio_sprint4.pdf` a
+  partir dos resultados e dos textos em `relatorio/textos.md`.
+
+```bash
+pip install -r requirements.txt
+python eval/pipeline.py                 # ~100 chamadas aos agentes + ~300 ao juiz
+python relatorio/gerar_relatorio.py
+```
+
+O juiz padrão é `qwen/qwen3.8-27b` (troque com `--juiz` ou `JUIZ_MODEL`).
+O pipeline é retomável: se cair por rate limit, rode de novo e ele continua
+de onde parou. Use `--casos F02,S04` para testar poucos casos primeiro.
+
 ## 🧪 Casos de teste
 
 - Acurácia (5 casos, herdados da Sprint 2) + memória de 3 turnos: ver
