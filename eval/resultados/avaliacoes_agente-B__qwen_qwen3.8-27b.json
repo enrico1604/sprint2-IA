@@ -483,6 +483,56 @@
     "aderencia_escopo": {
       "nota": 1.0,
       "justificativa": "The response correctly identifies the input as within scope (electric vehicle charging and billing) and adheres to the ChargeGrid Assistant persona. It accurately provides the specific cost of R$ 22,08 as required by the acceptance criteria, while also adding relevant context (energy consumed, SoC, time) that enhances the user experience without deviating from the topic."
+    },
+    "fidelidade_contexto": {
+      "nota": 1.0,
+      "justificativa": "The response accurately reflects all factual claims found in the context. The energy consumed (18.4 kWh), remaining energy (5.6 kWh), SoC (76%), and time elapsed (50 min) match the session data exactly. The calculated cost (R$ 22.08) is correctly derived from the provided tariff (R$ 1.2/kWh) and energy consumed. No specific data was invented or hallucinated."
+    },
+    "valores_corretos": {
+      "nota": 1.0,
+      "justificativa": "[{\"rotulo\": \"custo (R$)\", \"valor\": 22.08, \"encontrado\": true}]"
+    }
+  },
+  "B04": {
+    "correcao": {
+      "nota": 1.0,
+      "justificativa": "The response correctly identifies that a negative tariff is invalid, fulfilling the first acceptance criterion. It explicitly refuses to calculate a negative cost (avoiding the invalid result of -R$ 36.80) and instead offers to simulate with a positive tariff, which aligns perfectly with the expected output and the second acceptance criterion. The refusal is grounded in logical/commercial reasoning as requested."
+    },
+    "aderencia_escopo": {
+      "nota": 1.0,
+      "justificativa": "The response correctly identifies that a negative tariff is invalid and refuses to calculate a negative cost, aligning with the expected output. It maintains the ChargeGrid Assistant persona by offering relevant alternatives (calculating with a standard positive rate or a hypothetical positive rate) without deviating from the scope of electric vehicle charging and billing."
+    },
+    "fidelidade_contexto": {
+      "nota": 1.0,
+      "justificativa": "The response correctly identifies that a negative tariff is invalid and refuses to perform the calculation, which aligns with the evaluation step stating that a refusal without factual claims is considered faithful. The specific values cited in the alternative suggestions (R$ 1.20/kWh and 18.4 kWh) are directly supported by the provided context (Commercial Tariff and Energy Consumed), so no penalties for invented data apply."
+    }
+  },
+  "B05": {
+    "correcao": {
+      "nota": 1.0,
+      "justificativa": "The response correctly explains that with 0 kW power delivery, the charging process stops and it is impossible to estimate a completion time, aligning with the acceptance criteria. It also suggests verifying the connection or contacting support, as required by the expected output. There are no technical errors or factual contradictions."
+    },
+    "aderencia_escopo": {
+      "nota": 1.0,
+      "justificativa": "The response correctly identifies that the input is within the scope of electric vehicle charging. It accurately explains that with 0 kW power delivery, the charging process stops and the remaining time is effectively infinite or unestimable, aligning with the expected output. It also provides appropriate troubleshooting steps (checking the ChargeGrid app and contacting GoodWe support) without returning a technical error, fully satisfying the acceptance criteria."
+    },
+    "fidelidade_contexto": {
+      "nota": 1.0,
+      "justificativa": "The response correctly identifies that if power delivery drops to 0 kW, the charging process stops and the time to completion becomes infinite. This is a logical deduction based on general principles of electric vehicle charging (Step 2) and does not invent specific data like warranty years, prices, or technical specs not present in the context (Step 3). The advice to check the app or contact support is consistent with the system context provided (ChargeGrid/GoodWe). No factual hallucinations were detected."
+    }
+  },
+  "B06": {
+    "correcao": {
+      "nota": 1.0,
+      "justificativa": "The response correctly refuses to provide a specific price, aligning with the criterion 'Nao inventa preco de venda'. It explicitly directs the user to consult 'suporte oficial GoodWe' or authorized resellers, satisfying the criterion 'Indica canal oficial GoodWe'. The content matches the expected output's requirement to state that the price is not confirmed and to guide the user to official channels."
+    },
+    "aderencia_escopo": {
+      "nota": 1.0,
+      "justificativa": "The response correctly identifies that the specific price is not available and does not invent a value, aligning with the 'expected output' criteria. It appropriately redirects the user to official GoodWe support or authorized resellers, satisfying the requirement to indicate the official channel. The response maintains the ChargeGrid Assistant persona by offering relevant follow-up assistance regarding OCPP, solar integration, and tariff management, which falls within the defined scope."
+    },
+    "fidelidade_contexto": {
+      "nota": 1.0,
+      "justificativa": "The response correctly identifies that the specific price of the GoodWe HCA G2 is not present in the provided context. It avoids inventing any factual data such as prices, warranty details, or technical specifications not listed in the context. Instead, it provides a refusal based on lack of confirmed information and suggests valid next steps (contacting support), which aligns with the evaluation step that a response without unsupported factual claims is considered faithful."
     }
   }
 }

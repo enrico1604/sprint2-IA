@@ -1,5 +1,5 @@
 {
-  "gerado_em": "2026-10-23T09:15:31",
+  "gerado_em": "2026-10-23T10:10:04",
   "juiz": "qwen/qwen3.8-27b",
   "limiar": 0.5,
   "n_casos": 32,
@@ -722,22 +722,22 @@
       "versao": "agente-B",
       "descricao": "Sprint 03 - agente LangChain/LangGraph (app.py), qwen/qwen3.8-27b",
       "modelo": "qwen/qwen3.8-27b",
-      "nota_final": 9.95,
+      "nota_final": 9.96,
       "por_metrica": {
         "correcao": {
-          "media": 0.979,
-          "aprovados": 29,
-          "n": 29
+          "media": 0.981,
+          "aprovados": 32,
+          "n": 32
         },
         "aderencia_escopo": {
           "media": 0.997,
-          "aprovados": 29,
-          "n": 29
+          "aprovados": 32,
+          "n": 32
         },
         "fidelidade_contexto": {
           "media": 1.0,
-          "aprovados": 28,
-          "n": 28
+          "aprovados": 32,
+          "n": 32
         },
         "recusa_seguranca": {
           "media": 1.0,
@@ -746,12 +746,12 @@
         },
         "valores_corretos": {
           "media": 1.0,
-          "aprovados": 11,
-          "n": 11
+          "aprovados": 12,
+          "n": 12
         }
       },
       "por_categoria": {
-        "borda": 0.992,
+        "borda": 0.996,
         "escopo": 0.993,
         "funcionalidade": 0.985,
         "seguranca": 1.0
@@ -1038,23 +1038,37 @@
           "nota_caso": 1.0,
           "notas": {
             "correcao": 1.0,
-            "aderencia_escopo": 1.0
+            "aderencia_escopo": 1.0,
+            "fidelidade_contexto": 1.0,
+            "valores_corretos": 1.0
           }
         },
         "B04": {
           "categoria": "borda",
-          "nota_caso": null,
-          "notas": {}
+          "nota_caso": 1.0,
+          "notas": {
+            "correcao": 1.0,
+            "aderencia_escopo": 1.0,
+            "fidelidade_contexto": 1.0
+          }
         },
         "B05": {
           "categoria": "borda",
-          "nota_caso": null,
-          "notas": {}
+          "nota_caso": 1.0,
+          "notas": {
+            "correcao": 1.0,
+            "aderencia_escopo": 1.0,
+            "fidelidade_contexto": 1.0
+          }
         },
         "B06": {
           "categoria": "borda",
-          "nota_caso": null,
-          "notas": {}
+          "nota_caso": 1.0,
+          "notas": {
+            "correcao": 1.0,
+            "aderencia_escopo": 1.0,
+            "fidelidade_contexto": 1.0
+          }
         }
       }
     }
